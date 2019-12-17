@@ -25,6 +25,14 @@ node () {
  				bat "mvn sonar:sonar" 
 			} 
  		} 
+		stage ('APP-IC - Deploy') {
+	withMaven(maven: 'maven') { 
+ 			if(isUnix()) {
+ 				sh "mvn deploy" 
+			} else { 
+ 				bat "mvn deploy" 
+			} 
+ 		} 
 }
 }
 }
