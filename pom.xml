@@ -31,4 +31,9 @@
 		<url>http://localhost:8081/repository/maven-releases/</url>
 	</repository>
 </distributionManagement>  
+	<scm>
+  	<connection>scm:git:https://github.com/JuStalin/Test.git</connection>
+  	<url>https://github.com/bnasslahsen/jenkins-sample-1</url>
+  	<developerConnection>scm:git:https://github.com/JuStalin/Test.git</developerConnection>
+  </scm>
 </project>
